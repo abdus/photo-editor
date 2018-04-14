@@ -42,14 +42,14 @@ for (let i=0; i<sliders.length; i++) {
         // saving style in env letiable 
         imageStyle = document.getElementById('edited-image').style.filter;
 
-
-        
     })
 }
 
 let download = document.getElementById('download');
 
-download.addEventListener("click", () => {
+
+document.getElementById('ready-to-download').addEventListener('click', () => {
+
     // for converting it to canvas 
     let canvas = document.getElementById('canvas');
         
@@ -71,5 +71,7 @@ download.addEventListener("click", () => {
         console.log(dataURL);
         download.href = window.open(dataURL);
     }
-})
 
+    document.getElementById('ready-to-download').style.display = "none";
+    document.getElementById('ready').style.display = "inline-block";
+})
