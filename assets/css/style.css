@@ -1,5 +1,9 @@
 body {
     margin: 0px;
+    text-align: center;
+}
+#uploadImage {
+    margin: 40px;
 }
 #wrapper {
     display: flex;
@@ -36,4 +40,7 @@ canvas {
 }
 #ready {
     display: none;
+}
+#ready-to-download {
+    margin: 30px auto;
 }

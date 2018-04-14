@@ -1,5 +1,6 @@
 'use strict'
 
+
 let image = document.getElementsByTagName('img')[0];
 let uploadImage = document.getElementById('uploadImage');
 let sliders = document.querySelectorAll("input[type='range']");
