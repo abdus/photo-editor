@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Photo Editor</title>
+</head>
+<body>
+    <input type="file" accept="image/*" id="uploadImage">
+    <div id="wrapper">
+        <div class="img-editor">
+            <div class="range-slider">
+                Blur <br>
+                <input type="range" name="" id="blur" min="0" max="10" value="0">
+            </div>
+            <div class="range-slider">
+                Brightness <br>
+                <input type="range" name="" id="brightness" min="0" max="2" step=".1" value="1">
+            </div>
+            <div class="range-slider">
+                Contrast <br>
+                <input type="range" name="" id="contrast" min="0" max="2" value="1" step=".1">        
+            </div>
+            <div class="range-slider">
+                Grayscale <br>
+                <input type="range" name="" id="grayscale" min="0" max="1" value="0" step=".1">
+            </div>
+        </div>
+        <div id="img-wrapper">
+            <img id="edited-image">
+        </div>
+        <div class="img-editor">
+            <div class="range-slider">
+                Hue <br>
+                <input type="range" name="" id="hue" min="0" max="900" step="10" value="0">
+            </div>
+            <div class="range-slider">
+                Invert <br>
+                <input type="range" name="" id="invert" min="0" max="2" value="0" step=".1">
+            </div>
+            <div class="range-slider">
+                Saturation <br>
+                <input type="range" name="" id="saturation" min="0" max="2" value="1" step=".1">
+            </div>
+            <div class="range-slider">
+                Sepia <br>
+                <input type="range" name="" id="sepia" min="0" max="2" value="0" step=".1">
+            </div>
+        </div>
+    </div>
+    <div id="button-download">
+        <a href="" id="download"><button>Download Image</button></a>
+    </div>
+    <canvas id="canvas"></canvas>
+    
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
